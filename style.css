@@ -443,6 +443,12 @@ article .icon {
   /* color:indigo; */
 }
 
+/* cloud */
+
+#cloud {
+position: relative;
+}
+
 /* CONTACT */
 
 #contact {
