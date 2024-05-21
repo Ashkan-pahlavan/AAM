@@ -119,7 +119,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -150,7 +150,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 101vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -273,7 +273,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 3rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -299,6 +299,7 @@ section {
 }
 
 .details-container {
+  margin-top: 5%;
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -313,6 +314,9 @@ section {
   height: 80%;
 }
 
+/* .text-container{
+  margin-bottom: 5%;
+} */
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -448,6 +452,7 @@ article .icon {
 
 #cloud {
 position: relative;
+margin-top: 5%;
 }
 
 /* CONTACT */
