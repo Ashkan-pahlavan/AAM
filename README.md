@@ -7,7 +7,12 @@ Dieses Repository enthält den Code für meine persönliche Portfolio Webseite. 
     1. [EC2-Instanz](#3)
     2. [ECR (Elastic Container Registry)](#4)
     3. [ECS (Elastic Container Service)](#5)
-6. [Licence](#6)
+    4. [API Gateway](#6)
+    5. [Lambda für DynamoDB und SES](#7)
+    6. [DynamoDB Tabelle](#8)
+    7. [SES Verbindung](#9)
+    8. [Amplify](#10)
+9. [Licence](#11)
 
 ## Installation
 
@@ -45,6 +50,29 @@ Stellen Sie sicher, dass Sie Docker-Images für Ihre Anwendung erstellen und die
 Für die Bereitstellung und Verwaltung von Container-Anwendungen nutzen wir den Elastic Container Service (ECS) von AWS. ECS ermöglicht es uns, Docker-Container in einer skalierbaren und zuverlässigen Umgebung auszuführen, wodurch wir unsere Anwendung einfach und effizient skalieren können.
 
 Stellen Sie sicher, dass Sie Ihre Anwendung mit ECS konfigurieren und bereitstellen, um von den Vorteilen einer containerisierten Umgebung zu profitieren.
+
+### API Gateway
+Um eine API für unsere Anwendung zu erstellen, nutzen wir das API Gateway von AWS. Das API Gateway ermöglicht es uns, RESTful APIs zu erstellen und zu verwalten, die als Einstiegspunkt für unsere Backend-Services dienen.
+
+Konfigurieren Sie das API Gateway, um Anfragen an Ihre Lambda-Funktionen weiterzuleiten, die mit DynamoDB und SES interagieren.
+
+### Lambda für DynamoDB und SES
+Für die serverlose Verarbeitung unserer Backend-Logik nutzen wir AWS Lambda. Lambda-Funktionen können auf Ereignisse reagieren und ermöglichen uns, eine skalierbare und kosteneffiziente Architektur zu implementieren.
+
+Erstellen Sie eine Lambda-Funktion, die mit DynamoDB für das Speichern und Abrufen von Daten sowie mit Amazon SES für den E-Mail-Versand interagiert.
+
+### DynamoDB Tabelle
+Um die Daten unserer Anwendung zu speichern, nutzen wir Amazon DynamoDB. DynamoDB ist ein NoSQL-Datenbankservice, der eine schnelle und flexible Datenverarbeitung ermöglicht.
+
+Erstellen Sie eine DynamoDB-Tabelle, um die erforderlichen Daten für Ihre Anwendung zu speichern. Stellen Sie sicher, dass die Tabelle korrekt konfiguriert ist, um die benötigten Lese- und Schreibkapazitäten zu erfüllen.
+
+### SES Verbindung
+Für den E-Mail-Versand in unserer Anwendung nutzen wir Amazon Simple Email Service (SES). SES ermöglicht es uns, Transaktions- und Marketing-E-Mails in einer skalierbaren und zuverlässigen Weise zu versenden.
+
+Konfigurieren Sie die Verbindung zu Amazon SES, um E-Mails aus Ihrer Anwendung zu senden. Stellen Sie sicher, dass die erforderlichen Berechtigungen und Einstellungen für den E-Mail-Versand konfiguriert sind.
+
+### Amplify
+Um deine Portfolio-Webseite mit Git, AWS Amplify und Visual Studio Code (VS Code) zu hosten, gehe wie folgt vor: Erstelle zunächst ein neues Git-Repository und pushe deinen Code zu einem Git-Hosting-Dienst wie GitHub. Melde dich dann bei AWS Amplify an, wähle "Get Started" unter "Deploy" und verbinde Amplify mit deinem Repository. Konfiguriere die Build-Einstellungen und starte den Deployment-Prozess. Mit der Git-Erweiterung in VS Code kannst du Änderungen committen und pushen, damit Amplify deine Webseite automatisch neu baut und deployt.
 
 
 ## Licence
