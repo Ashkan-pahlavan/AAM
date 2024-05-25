@@ -385,6 +385,8 @@ padding: 10px;
 
 #experience {
   position: relative;
+  height: 80vh;
+
 }
 
 .experience-sub-title {
@@ -424,6 +426,8 @@ article .icon {
 
 #projects {
   position: relative;
+  height: 120vh;
+
 }
 
 .color-container {
@@ -448,11 +452,14 @@ article .icon {
   /* color:indigo; */
 }
 
+
 /* cloud */
 
 #cloud {
 position: relative;
 margin-top: 5%;
+height: 90vh;
+
 }
 
 /* CONTACT */
@@ -461,7 +468,7 @@ margin-top: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 40vh;
 }
 
 .contact-info-upper-container {
@@ -496,9 +503,6 @@ margin-top: 5%;
 }
 
 /* input */
-#input {
-  margin-top: 20px;
-}
 
 .title {
   font-size: 24px;
