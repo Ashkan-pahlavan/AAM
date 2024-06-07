@@ -166,7 +166,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
 }
 
 .section__pic-container {
@@ -270,6 +270,7 @@ section {
 
 #about {
   position: relative;
+  height: 100vh;
 }
 
 .about-containers {
@@ -322,7 +323,12 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
 /* certification */
+
+#certification{
+  height: 100vh;
+}
 .certif{
   display: block;
   padding-top: 2%;
@@ -385,7 +391,7 @@ padding: 10px;
 
 #experience {
   position: relative;
-  height: 80vh;
+  height: 100vh;
 
 }
 
@@ -432,7 +438,7 @@ article h3 {
 
 #projects {
   position: relative;
-  height: 120vh;
+  height: 105vh;
 
 }
 
