@@ -19,6 +19,7 @@ p {
   color: rgb(85, 85, 85);
 }
 
+
 /* TRANSITION */
 
 a,
@@ -579,4 +580,56 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Container und Flexbox Anpassungen */
+  .section-container, .about-containers, .experience-details-container, .details-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Stellen Sie sicher, dass die Container die volle Breite nutzen */
+  }
+
+  /* Reduzierung von Margin und Padding */
+  section, .details-container, .about-details-container {
+    padding: 10px; /* Reduzieren Sie das Padding für alle Abschnitte */
+    margin: 0; /* Entfernen Sie äußere Margins */
+  }
+
+  /* Icon-Größen und Abstände */
+  .icon, .icon1 {
+    width: 50px; /* Setzen Sie eine feste Größe für Icons */
+    height: 50px; /* Setzen Sie eine feste Größe für Icons */
+    margin: 10px auto; /* Zentrieren und Abstand der Icons */
+  }
+
+  /* Text-Anpassungen */
+  p, h1, h2, h3, a, .btn {
+    font-size: 14px; /* Verkleinern der Schriftgrößen */
+    text-align: center; /* Zentrieren des Texts */
+  }
+
+  /* Button-Anpassungen */
+  .btn {
+    width: auto; /* Erlaubt den Buttons, ihre Größe dem Inhalt anzupassen */
+    padding: 8px 16px; /* Verkleinern des Button-Paddings */
+  }
+
+  /* Footer-Anpassungen */
+  footer {
+    padding: 20px 10px; /* Anpassen des Footers */
+  }
+
+  /* Navigation und Menü-Anpassungen */
+  nav, .nav-links {
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
 }
